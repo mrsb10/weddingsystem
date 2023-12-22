@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dbms.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Gallery - Heavenly Day Events</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="topbar">
+            <div class="navbar left-links">
+                <a href="frontend1.php">Home</a>
+            </div>
+            <div class="navbar left-links">
+                <a href="about.php">About</a>
+            </div>
+            <div class="navbar left-links">
+                <a href="services.php">Service</a>
+            </div>
+            <div class="logo">
+                <img src="https://images.squarespace-cdn.com/content/51f030f9e4b07a9944dcd049/bae93830-8528-4129-89d9-ae7a33eba0de/2.png?format=1000w&content-type=image%2Fpng" alt="Logo">
+            </div>
+            <div class="navbar right-links">
+                <a href="gallery.php">Gallery</a>
+            </div>
+            <div class="navbar right-links">
+                <a href="contact.php">Contact</a>
+            </div>
+            
+            <div class="navbar right-links">
+          <?php 
+            
+             session_start();
+             if(isset($_SESSION['uname'])){
+              $un=$_SESSION['uname'];
+              echo "Hello, ".htmlspecialchars($un) . "!";
+             }
+             else{
+              echo "Hello user";
+             }
+          ?>
+        </div></div>
+        <div class="gallery-section">
+            <h1>Our Beautiful Weddings</h1>
+            <div class="image-slider">
+                <img src="https://t4.ftcdn.net/jpg/04/72/21/69/360_F_472216926_71rsshpHs5IvhLqvH6GnAPl6lYmmWRp9.jpg" alt="Wedding Image 1">
+                <img src="https://t4.ftcdn.net/jpg/04/55/58/05/240_F_455580507_5pOrNVi7kgYJPluPJoRR56xYQ6gg2RJn.jpg" alt="Wedding Image 2">
+                <img src="https://t4.ftcdn.net/jpg/04/73/65/11/240_F_473651144_ZQfLkVpepBLcn0vPbZUtVeCzCYQgLAFg.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/05/26/94/31/240_F_526943174_XggKIrL9ONli5DIaaFHDi9yUUt9JO3wc.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/00/17/96/47/240_F_17964730_fnpua9kX9EUxPdBbq1iaeJlN3kal12EW.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/04/73/65/12/240_F_473651204_6fva0hBJ2COaZrpcUj8I42B5wdyl9mYd.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/02/62/86/86/240_F_262868615_1Z3RFZatKxKv5weBN9Wi0Qh3BOBVpxAh.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/04/72/21/79/240_F_472217983_lNZJIpVLy8NdH0eRWZ9j3uAn1eOQwQxp.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/04/91/95/99/240_F_491959954_picL1tOuDsLzUPSACqIbx8LbbsWBDWoY.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/04/72/21/76/240_F_472217681_7aUtGMSxP9BJ6xbGIcfsvdW3XEGu0uie.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/01/66/74/09/240_F_166740995_J3DdGASJdhgA4C1J4x5PzLPYD1xw563E.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/05/42/66/50/240_F_542665026_Dn9gb2gTLOndQJ9voXYerkJOQLTVsG1o.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/02/29/28/08/240_F_229280813_ad98KgNz7n0ONLlMtapOdqXaXpzwlnEC.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/05/46/65/30/240_F_546653056_qse7Kr1SsDafU3eBMtQQY8LdIBGkUIAT.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/00/50/18/02/240_F_50180248_rdYagN5nCdtGEoOwK4p3laNnaxHzymRf.jpg  " alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/04/31/98/90/240_F_431989091_JOAViN7A9wDtrXJLmThtlSrUIaOq3VXD.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/04/31/99/00/240_F_431990007_nZHgYq3jU63OKvukrDlUoxmArs7uFF4s.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/06/03/11/01/240_F_603110120_4DKho5CeDEGcLKUiaGsaKXpvReRTZxBH.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/05/48/50/77/240_F_548507702_QSnRKeQAHDzrSykJRiX1GxBjSUiSSThZ.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/03/79/85/26/240_F_379852663_e4jg04wtZv22VbvQ8y95MzAjWv1vLnnp.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/05/28/41/74/240_F_528417457_9NMicTSz0woJx4NzeHwRkqcnOpleQARg.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/05/48/50/78/240_F_548507875_vZj2ZrPAHMOAhw6EhjdwH4FCkCJdvtAS.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/02/15/30/84/240_F_215308404_4AH8hyL4olaOHW4dORejuy4oeICQlkJg.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/02/15/30/84/240_F_215308404_4AH8hyL4olaOHW4dORejuy4oeICQlkJg.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/02/10/26/04/240_F_210260423_RFgrSnw0PUmGKnM0USh3ITw0T9hRA9NS.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/04/72/21/84/240_F_472218460_wl2ccfhcK1ACoyk8olGm46RDVeFbiV0n.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/02/15/30/85/240_F_215308531_723dF6wdN369vQi8d6IPO3R3Ghgqy2zw.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/04/72/21/84/240_F_472218460_wl2ccfhcK1ACoyk8olGm46RDVeFbiV0n.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/02/22/17/95/240_F_222179585_XenrZas6nZY77wS2SpzfPlTn63a2lM89.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/04/72/21/65/240_F_472216567_f6ikDO0kjtCh0eKXow2V06QLAQpcvCRK.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/04/40/14/51/240_F_440145176_WmQjgIb5XENsRCHGeVjUiRUYz73Gfpd2.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/01/96/69/24/240_F_196692403_4Bsaz5yZH6XUSNvanicXy0sO3BvK1daw.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/05/29/30/20/240_F_529302028_B3rOPuNopn0KN3Sb8S1WAoAbdFONa0Ba.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/01/81/59/41/240_F_181594156_5txY7hO6VOi6k1zi6arwsVoLzYnYA8h6.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/03/16/19/43/240_F_316194382_7mvK4jAubeD0QDAPW920Nc2bzYLJWO2U.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/03/16/21/34/240_F_316213407_9G0oVjFFBWls9uj16JVMzuN8w4Jfjsij.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/01/66/72/52/240_F_166725220_bjFRGhwDyOOzQDeJ6vBbZkL7sKgMUfTw.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/01/66/74/39/240_F_166743905_AzRgM6WK8uxHGQtjJrx9AEI4qXoopOzq.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/00/82/18/56/240_F_82185687_aXpUhzhPkmiVXHhT2H3UhPukgNRPlf5B.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/01/18/33/10/240_F_118331024_FFnnsehKkgAcVsX3JrL9ITt84Pws3BV8.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/01/18/33/10/240_F_118331024_FFnnsehKkgAcVsX3JrL9ITt84Pws3BV8.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/02/68/87/41/240_F_268874117_J1zpQNPSopvMQF8tF81tdmCurr02Zgfj.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/06/36/05/81/240_F_636058191_Pv9nTOQZNin8buo60eMun7Q0J5DuVd3U.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/06/36/05/81/240_F_636058177_jVmqbZn98OVNyt03aikOzm1TnnSetgWd.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/06/41/71/87/240_F_641718784_lndQipQwn3ni18cQh0BKOHFiZ7hJwvyE.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/05/70/16/07/240_F_570160749_tfn25XPdJY15ELKSx3lY4GlivR0Y56qx.jpg" alt="Wedding Image 3">
+                <img src="https://t3.ftcdn.net/jpg/04/72/21/98/240_F_472219815_QpKeZaR9ZvahypH398jcmFw3cg5JNKqX.jpg" alt="Wedding Image 3">
+                <img src="https://t4.ftcdn.net/jpg/04/72/21/83/240_F_472218363_oD8vfydfCqjMKDfGwitNF0TuuM3kg753.jpg" alt="Wedding Image 3">
+        
+
+            </div>
+        </div>
+
+       
+    </div>
+
+    <!-- Include the script for image slider -->
+    <script src="gallery.js"></script>
+</body>
+</html>
+
+
+

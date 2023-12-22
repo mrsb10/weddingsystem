@@ -1,0 +1,115 @@
+body {
+    font-family: 'Playfair Display', serif;
+    width: 80%;
+    margin: auto; /* Center the body content */
+}
+
+.venue-main{
+    display:grid;
+    grid-template-rows: 200px 50px 300px 300px 300px 300px 300px;
+    gap:20px;
+} 
+.topbar {
+    /* background-color: aqua; */ /* Commented out for clarity */
+    display: flex;
+    width:100%;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100px; /* Ensure the image doesn't exceed the height of the .logo div */
+}
+
+.navbar {
+    /* Horizontally space the navbar items */
+    display: flex;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.left-links a:nth-child(2) {
+    margin-left: 20px; /* Add space between link 2 and the logo */
+}
+
+.right-links a:hover,
+.left-links a:hover {
+    position: relative;
+    color: black;
+}
+
+.right-links a:hover::before,
+.left-links a:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid black; /* Adjust the border style and size as needed */
+    padding-top : 20px;
+    padding-bottom : 20px;
+    padding-left : 20px;
+    padding-right : 20px; /* Adjust the padding to add more space */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move the border behind the text */
+}
+
+.navbar a {
+    /* Optional styling for navbar links */
+    text-decoration: none;
+    color: black;
+}
+
+.topic{
+    background-color: aquamarine;
+}
+
+.photo{
+    width:400px;
+    height:300px;
+    background-color: blue;
+}
+
+.divi{
+    background-color: bisque;
+    display:flex;
+}
+
+.topic{
+    font-size:35px;
+}
+
+.name{
+    margin-left:50px;
+    background-color: aqua;
+    font-size:40px;
+}
+
+.rating{
+    margin-left:50px;
+    margin-top:10px;
+    background-color: rgb(0, 98, 65);
+    font-size:30px;
+}
+
+.button{
+    width:70px;
+    height:30px;
+    margin-top:10px;
+    margin-left:300px;
+}
+
+.next{
+    width:70px;
+    height:30px;
+    margin-top:10px;
+    margin-left:250px;
+}

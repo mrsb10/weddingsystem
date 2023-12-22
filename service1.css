@@ -1,0 +1,117 @@
+body {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    margin: auto; /* Center the body content */
+}
+
+.service-main{
+    display:grid;
+    grid-template-rows: 150px 400px 400px 400px;
+    row-gap: 100px;
+    margin: auto;
+}
+
+.topbar {
+    /* background-color: aqua; */ /* Commented out for clarity */
+    display: flex;
+    width:80%;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100px; /* Ensure the image doesn't exceed the height of the .logo div */
+}
+
+.navbar {
+    /* Horizontally space the navbar items */
+    display: flex;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.left-links a:nth-child(2) {
+    margin-left: 20px; /* Add space between link 2 and the logo */
+}
+
+.right-links a:hover,
+.left-links a:hover {
+    position: relative;
+    color: black;
+}
+
+.right-links a:hover::before,
+.left-links a:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid black; /* Adjust the border style and size as needed */
+    padding-top : 20px;
+    padding-bottom : 20px;
+    padding-left : 20px;
+    padding-right : 20px; /* Adjust the padding to add more space */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move the border behind the text */
+}
+
+.navbar a {
+    /* Optional styling for navbar links */
+    text-decoration: none;
+    color: black;
+}
+
+.service-top{
+    /*background-color: red;*/
+    display:flex;
+    justify-content: space-around;
+}
+
+.service-middle{
+    /*background-color: aquamarine;*/
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.service-bottom{
+   /* background-color: blueviolet;*/
+    display:flex;
+    justify-content: space-around;
+}
+
+.top-left{
+    /*background-color: blue;*/
+    width:500px;
+    height:400px;
+}
+
+.service-photo{
+    width:500px;
+    height:400px;
+    border-radius: 10%;
+    transition: opacity 0.3s ease;
+}
+
+.service-photo:hover {
+    opacity: 0.7; /* Set the desired opacity on hover */
+}
+
+.text{
+    text-align: center;
+    margin-top:10px;
+    font-size: 30px;
+}
+
+
+
+
+

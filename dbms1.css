@@ -1,0 +1,163 @@
+body {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    margin: auto; /* Center the body content */
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: 200px 510px 600px 500px;
+    margin: auto; /* Center the main container */
+}
+
+.topbar {
+    /* background-color: aqua; */ /* Commented out for clarity */
+    display: flex;
+    width:80%;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100px; /* Ensure the image doesn't exceed the height of the .logo div */
+}
+
+.navbar {
+    /* Horizontally space the navbar items */
+    display: flex;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.left-links a:nth-child(2) {
+    margin-left: 20px; /* Add space between link 2 and the logo */
+}
+
+.right-links a:hover,
+.left-links a:hover {
+    position: relative;
+    color: black;
+}
+
+.right-links a:hover::before,
+.left-links a:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid black; /* Adjust the border style and size as needed */
+    padding-top : 20px;
+    padding-bottom : 20px;
+    padding-left : 20px;
+    padding-right : 20px; /* Adjust the padding to add more space */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move the border behind the text */
+}
+
+.navbar a {
+    /* Optional styling for navbar links */
+    text-decoration: none;
+    color: black;
+}
+
+.bottombar {
+    /*background-color: blueviolet;*/
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.image-container{
+    width:341.55;
+    height:461.62px;
+}
+
+.img{
+    width:341.55px;
+    height:461.62px;
+}
+
+.testimonial{
+    /*background-color: aquamarine;*/
+    display:flex;
+    justify-content: space-between;
+}
+
+.testimonial-right{
+    width:480px;
+    height:550px;
+    margin-right:30px;
+}
+
+.testimonial-image{
+    width:480px;
+    height:550px;
+}
+
+.planner-image{
+    height:150px;
+    width:600px;
+    margin-left: 30px;
+}
+
+.wedding-planner{
+    height:150px;
+    width:600px;
+}
+
+.service-pop{
+    display:flex;
+    justify-content: space-between;
+}
+
+.wedding-planner-text{
+    font-size:20px;
+    margin-left:25px;
+    margin-right:20px;
+    margin-top:20px;
+}
+
+.pop-photo{
+    width:400px;
+    height:100px;
+}
+
+.service-planning{
+    width:400px;
+    height:100px;
+    margin-left:150px;
+}
+
+.tell{
+    padding:15px;
+    border-radius: 5%;
+    margin-left:240px;
+    margin-top:20px;
+    width:150px;
+    border-color: grey;
+    background-color: white;
+    
+}
+
+.wedding-planner-text2{
+    font-size:20px;
+    margin-left:40px;
+    margin-right:20px;
+    margin-top:20px;
+}
+
+.pop-right-photo{
+    height:450px;
+    width:600px;
+    margin-left: 25px;
+}
+
